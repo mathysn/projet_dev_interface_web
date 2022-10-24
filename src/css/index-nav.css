@@ -11,16 +11,20 @@ nav{
     margin-left: 100px;
 }
 
-.page-title{
+.nav-title{
     font-weight: 700;
+    font-size: 20px;
+}
 
+.item{
+    font-weight: 400;
+    font-size: 17px;
 }
 
 .navbar-item a{
     display: inline-block;
-    font-family: Inter;
+    font-family: Inter, sans-serif;
     text-decoration: none;
     padding: 0px 8px;
-    font-size: 21px;
     color: black;
 }
