@@ -1,0 +1,26 @@
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-links{
+    display: flex;
+    list-style-type: none;
+    margin: 13px 0px;
+    margin-left: 100px;
+}
+
+.page-title{
+    font-weight: 700;
+
+}
+
+.navbar-item a{
+    display: inline-block;
+    font-family: Inter;
+    text-decoration: none;
+    padding: 0px 8px;
+    font-size: 21px;
+    color: black;
+}
