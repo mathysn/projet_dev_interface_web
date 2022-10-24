@@ -30,6 +30,12 @@ nav{
     color: black;
 }
 
+.navbar-item input[type = text]{
+    border: none;
+    font-size: 17px;
+    
+}
+
 #search-icon{
     width: 15.85px;
     height: 16px;
