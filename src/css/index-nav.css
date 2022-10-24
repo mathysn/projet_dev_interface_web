@@ -2,13 +2,14 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    border-bottom: solid 1px;
 }
 
 .navbar-links{
     display: flex;
+    align-items: center;
     list-style-type: none;
-    margin: 13px 0px;
-    margin-left: 100px;
+    margin: 19px 0px;
 }
 
 .nav-title{
@@ -25,6 +26,16 @@ nav{
     display: inline-block;
     font-family: Inter, sans-serif;
     text-decoration: none;
-    padding: 0px 8px;
+    margin-right: 32px;
     color: black;
+}
+
+#search-icon{
+    width: 15.85px;
+    height: 16px;
+    margin-right: 12.15px;
+}
+
+#shopping-cart-icon{
+    margin-right: 7.72px;
 }
