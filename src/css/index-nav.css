@@ -26,14 +26,14 @@ nav{
     display: inline-block;
     font-family: Inter, sans-serif;
     text-decoration: none;
-    margin-right: 32px;
+    margin-left: 32px;
     color: black;
 }
 
 .navbar-item input[type = text]{
     border: none;
     font-size: 17px;
-    
+
 }
 
 #search-icon{
