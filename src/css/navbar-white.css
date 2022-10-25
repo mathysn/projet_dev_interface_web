@@ -6,6 +6,42 @@ nav{
     background-color: white;
 }
 
+.responsive-navbar{
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    border-bottom: solid 1px white;
+    background-color: black;
+    height: 64px;
+}
+
+.nav-icon{
+    padding-right: 20px;
+}
+
+.bar{
+    background-color: white;
+    height: 0px;
+    width: 33px;
+    border: solid 2px white;
+    border-radius: 10px;
+}
+
+.space{
+    margin-bottom: 7px;
+}
+
+@media screen and (max-width: 850px){
+
+    nav{
+        display: none;
+    }
+
+    .responsive-navbar{
+        display: flex;
+    }
+}
+
 .navbar-links{
     display: flex;
     align-items: center;
