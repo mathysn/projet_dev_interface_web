@@ -2,7 +2,8 @@ nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border-bottom: solid 1px;
+    border-bottom: solid 1px black;
+    background-color: white;
 }
 
 .navbar-links{
@@ -31,9 +32,18 @@ nav{
 }
 
 .navbar-item input[type = text]{
+    outline: none;
     border: none;
     font-size: 17px;
+    background-color: transparent;
+    color: #979797;
 
+}
+
+.navbar-item input:focus,
+.navbar-item input:active{
+    border-color: transparent;
+    color: black;
 }
 
 #search-icon{
