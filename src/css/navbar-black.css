@@ -6,6 +6,12 @@ nav{
     background-color: black;
 }
 
+@media screen and (max-width: 850px){
+    nav{
+        display: none;
+    }
+}
+
 .navbar-links{
     display: flex;
     align-items: center;
