@@ -5,3 +5,5 @@ Membres du groupe 4 :
 - Tom SIOUAN
 - Mathys NOURRY
 - Ewan HUMBERT
+
+Maquette: https://www.figma.com/file/YS88fIlPDDfvdcwiBBas1w/Ecommerce-Wireframe
