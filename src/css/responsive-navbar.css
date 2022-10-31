@@ -8,7 +8,8 @@
 }
 
 .nav-icon{
-    margin-right: 20px;
+    position: absolute;
+    right: 20px;
 }
 
 .bar{
