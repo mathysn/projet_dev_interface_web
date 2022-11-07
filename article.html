@@ -1,19 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./src/css/article.css">
+    <link rel="stylesheet" href="src/css/navbar-white.css">
+    <link rel="stylesheet" href="src/css/responsive-navbar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+
     <title>Article</title>
 </head>
 <body>
+    <header>
+        <nav>
+            <ul class="navbar-links">
+                <li class="navbar-item nav-title"><a href="#">Ecommerce</a></li>
+                <li class="navbar-item item"><a href="#">Shop</a></li>
+                <li class="navbar-item item"><a href="#">Stories</a></li>
+                <li class="navbar-item item"><a href="#">About</a></li>
+                <li class="navbar-item item"><a href="#"><iconify-icon id="search-icon" inline icon="bi:search"></iconify-icon></a><input type="text" placeholder="Search"></li>
+            </ul>
+
+            <ul class="navbar-links">
+                <li class="navbar-item"><a href="cards.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>3</a></li>
+                <li class="navbar-item"><a href="#">Login</a></li>
+            </ul>
+
+            
+        </nav>
+        <div class="responsive-navbar">
+            <a class="nav-icon" href="#">
+                <div class="bar"></div>
+                <div class="space"></div>
+                <div class="bar"></div>
+                <div class="space"></div>
+                <div class="bar"></div>
+                <div class="space"></div>
+                <div class="bar"></div>
+            </a>
+        </div>
+    </header>
     <main>
-        <div id="slides">
-            <img class="slide" src="https://i1.sndcdn.com/artworks-VSfsx4067rU789Fv-aSvhFw-t500x500.jpg" alt="Image article 1">
-            <img class="slide" src="https://i1.sndcdn.com/artworks-VSfsx4067rU789Fv-aSvhFw-t500x500.jpg" alt="Image article 3">
-            <img class="slide" src="https://i1.sndcdn.com/artworks-VSfsx4067rU789Fv-aSvhFw-t500x500.jpg" alt="Image article 3">
-            <img class="slide" src="https://i1.sndcdn.com/artworks-VSfsx4067rU789Fv-aSvhFw-t500x500.jpg" alt="Image article 4">
+        <div id="carousel">
+            <a href="#" id="slider-btn-left"><</a>
+            <div id="slides">
+                <img class="slide" id="slide-1" src="http://www.exarmyvehicles.com/media/galleries/1652/tank_t_55_014.jpg" alt="Image article 1">
+                <img class="slide" id="slide-2" src="http://www.exarmyvehicles.com/media/galleries/1652/tank_t_55_06.jpg" alt="Image article 2">
+                <img class="slide" id="slide-3" src="http://www.exarmyvehicles.com/media/galleries/1652/tank_t_55_019.jpg" alt="Image article 3">
+                <img class="slide" id="slide-4" src="http://www.exarmyvehicles.com/media/galleries/1652/tank_t_55_019.jpg" alt="Image article 4">
+            </div>
+            <a href="#" id="slider-btn-right">></a>
         </div>
         <div id="description">
             <h1>Gros char d'assaut</h1>
@@ -32,5 +74,7 @@
             <p>Dimension du tank :  8,7m x 2,7m x 2,4m</p>
         </div>
     </main>
+
+    <script src="./src/js/carousel.js"></script>
 </body>
 </html>
