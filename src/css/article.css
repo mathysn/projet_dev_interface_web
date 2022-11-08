@@ -64,7 +64,9 @@ main {
 }
 
 .slide {
-    object-fit: contain;
+    object-fit: cover;
+    width: var(--slider-size);
+    height: var(--slider-size);
     scroll-snap-align: start;
     flex-shrink: 0;
     transform-origin: center center;
