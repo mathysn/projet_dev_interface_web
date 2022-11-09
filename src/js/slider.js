@@ -5,6 +5,11 @@ let activeSlide = 1;
 
 const slidesContainer = document.querySelector("#slides");
 
+function changeLinksButtons(link) {
+    sliderBtnLeft.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) - 1}`);
+    sliderBtnRight.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) + 1}`);
+}
+
 function slideLeft(e) {
     activeSlide--;
 
@@ -16,8 +21,7 @@ function slideLeft(e) {
         sliderBtnRight.style.visibility = "visible";
     }
 
-    sliderBtnLeft.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) - 1}`);
-    sliderBtnRight.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) + 1}`);
+    changeLinksButtons(link);
 }
 
 function slideRight(e) {
@@ -31,8 +35,7 @@ function slideRight(e) {
         sliderBtnLeft.style.visibility = "visible";
     }
 
-    sliderBtnLeft.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) - 1}`);
-    sliderBtnRight.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) + 1}`);
+    changeLinksButtons(link);
 }
 
 window.addEventListener('load', (e) => {
@@ -43,8 +46,7 @@ window.addEventListener('load', (e) => {
 
     let link = slides[activeSlide - 1].getAttribute("id");
 
-    sliderBtnLeft.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) - 1}`);
-    sliderBtnRight.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) + 1}`);
+    changeLinksButtons(link);
 });
 
 sliderBtnLeft.addEventListener("click", slideLeft);
