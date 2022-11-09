@@ -1,3 +1,12 @@
+:root {
+    --primary: #000000;
+    --secondary: #979797;
+    --bg-primary: #eff2f6;
+
+    --slider-size: 500px;
+    --slider-btn-size: 50px;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -6,18 +15,61 @@
 
 body {
     overflow-x: hidden;
+    font-family: Public Sans;
 }
 
-#slides {
-    width: 500px;
-    height: 500px;
-    overflow: hidden;
+main {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.slides {
-    width: 500px;
+#slider a {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    aspect-ratio: 1 / 1;
+    width: var(--slider-btn-size);
+    border-radius: 50%;
+    border: none;
+    color: var(--bg-primary);
+    font-size: calc(var(--slider-btn-size) * 0.8);
+    font-weight: 200;
+    background-color: var(--primary);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#slider-btn-left {
+    top: calc(var(--slider-size)/2 + var(--slider-btn-size)/2);
+    left: 5%;
+}
+
+#slider-btn-right {
+    bottom: calc(var(--slider-size)/2 + var(--slider-btn-size)/2);
+    left: 85%;
+}
+
+#slides {
+    width: var(--slider-size);
+    height: var(--slider-size);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
+.slide {
     object-fit: cover;
+    width: var(--slider-size);
+    height: var(--slider-size);
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
 }
