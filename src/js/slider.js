@@ -8,10 +8,10 @@ function slideLeft(e) {
 
     let link = slides[activeSlide].getAttribute("id");
 
-    if (activeSlide <= 1) sliderBtnLeft.style.display = "none";
+    if (activeSlide <= 1) sliderBtnLeft.style.visibility = "hidden";
 
-    if (sliderBtnRight.style.display == "none" && activeSlide < slides.length) {
-        sliderBtnRight.style.display = "flex";
+    if (sliderBtnRight.style.visibility == "hidden" && activeSlide < slides.length) {
+        sliderBtnRight.style.visibility = "visible";
     }
 
     sliderBtnLeft.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) - 1}`);
@@ -23,10 +23,10 @@ function slideRight(e) {
 
     let link = slides[activeSlide - 2].getAttribute("id");
 
-    if (activeSlide >= slides.length) sliderBtnRight.style.display = "none";
+    if (activeSlide >= slides.length) sliderBtnRight.style.visibility = "hidden";
 
-    if (sliderBtnLeft.style.display == "none" && activeSlide > 1) {
-        sliderBtnLeft.style.display = "flex";
+    if (sliderBtnLeft.style.visibility == "hidden" && activeSlide > 1) {
+        sliderBtnLeft.style.visibility = "visible";
     }
 
     sliderBtnLeft.setAttribute("href", `#slide-${parseInt(link.slice(-1), 10) - 1}`);
@@ -34,7 +34,10 @@ function slideRight(e) {
 }
 
 window.addEventListener('load', (e) => {
-    sliderBtnLeft.style.display = "none";
+    if (activeSlide <= 1) sliderBtnLeft.style.visibility = "hidden";
+    if (activeSlide >= slides.length) sliderBtnRight.style.visibility = "hidden";
+
+    console.log("hello");
 
     let link = slides[activeSlide - 1].getAttribute("id");
 
