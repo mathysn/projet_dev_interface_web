@@ -3,8 +3,8 @@
     --secondary: #979797;
     --bg-primary: #eff2f6;
 
-    --slider-size: 500px;
-    --slider-btn-size: 50px;
+    --slider-size: 550px;
+    --slider-btn-size: 57px;
 }
 
 * {
@@ -15,13 +15,14 @@
 
 body {
     overflow-x: hidden;
-    font-family: Public Sans;
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--bg-primary);
 }
 
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     margin: 100px;
 }
 
@@ -40,8 +41,8 @@ main {
     border-radius: 50%;
     border: none;
     color: var(--bg-primary);
-    font-size: calc(var(--slider-btn-size) * 0.8);
-    font-weight: 200;
+    font-size: calc(var(--slider-btn-size) * 0.7);
+    font-weight: 100;
     background-color: var(--primary);
     cursor: pointer;
     z-index: 1;
@@ -81,11 +82,73 @@ main {
 }
 
 .right-btn-hovered .slide {
-    width: calc(var(--slider-size) * 0.92);
+    width: calc(var(--slider-size) * 0.89);
     scroll-snap-align: start;
 }
 
 .left-btn-hovered .slide {
-    width: calc(var(--slider-size) * 0.92);
+    width: calc(var(--slider-size) * 0.89);
     scroll-snap-align: end;
+}
+
+#description h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+}
+
+#description #prix {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#description #libelle {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.bouton-quantite {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary);
+    width: 168px;
+    height: 50px;
+    padding: 10px;
+}
+
+.bouton-quantite button {
+    outline:none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    color: var(--secondary);
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Inter', sans-serif;
+}
+
+.bouton-quantite #quantite-output {
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+}
+
+.bouton-achat {
+    outline:none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 0;
+    border: 1px solid var(--primary);
+    width: 168px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.3px;
+    padding: 10px;
 }

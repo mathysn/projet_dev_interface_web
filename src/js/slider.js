@@ -42,8 +42,6 @@ window.addEventListener('load', (e) => {
     if (activeSlide <= 1) sliderBtnLeft.style.visibility = "hidden";
     if (activeSlide >= slides.length) sliderBtnRight.style.visibility = "hidden";
 
-    console.log("hello");
-
     let link = slides[activeSlide - 1].getAttribute("id");
 
     changeLinksButtons(link);

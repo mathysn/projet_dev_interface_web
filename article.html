@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="./src/css/article.css">
-    <link rel="stylesheet" href="src/css/navbar-white.css">
+    <link rel="stylesheet" href="src/css/navbar-black.css">
     <link rel="stylesheet" href="src/css/responsive-navbar.css">
 
+    <!-- FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <title>Article</title>
 </head>
@@ -31,8 +33,6 @@
                 <li class="navbar-item"><a href="cards.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>3</a></li>
                 <li class="navbar-item"><a href="#">Login</a></li>
             </ul>
-
-            
         </nav>
         <div class="responsive-navbar">
             <a class="nav-icon" href="#">
@@ -46,6 +46,7 @@
             </a>
         </div>
     </header>
+
     <main>
         <div id="slider">
             <div id="slides">
@@ -60,23 +61,29 @@
             </div>
         </div>
         <div id="description">
-            <h1>Main battle tank T-55A</h1>
-            <p>$20,000</p>
-            <p>Gros char d'assaut full-option à vendre, très peu servit.</p>
+            <h3>Main battle tank T-55A</h3>
+            <p id="prix">$20,000</p>
+            <p id="libelle">Le T-55 est un char moyen soviétique, conçu en 1958. Il est considéré comme une amélioration subséquente du T-54. Il s'agit du premier char au monde à être équipé d'un système de protection NBC, assurant sa survie en zone contaminée.</p>
             <form id="boutons-achat">
-                <input type="number" class="bouton-achat"></input>
+                <div class="bouton-quantite">
+                    <button id="quantite-remove" onclick="this.parentNode.querySelector('#quantite').textContent = parseInt(this.parentNode.querySelector('quantite').textContent, 10) - 1">-</button>
+                    <span id="quantite-output">1</span>
+                    <button id="quantite-add" onclick="this.parentNode.querySelector('#quantite').textContent = parseInt(this.parentNode.querySelector('quantite').textContent, 10) + 1" class="plus">+</button>
+                </div>
                 <select class="bouton-achat">
-                    <option>Bleu chiotte</option>
-                    <option>Bleu canard</option>
-                    <option>Bleu egyptien</option>
-                    <option>Zinzolin</option>
-                    <option>Jaune pisse</option>
+                    <option>VERT</option>
+                    <option>BLEU</option>
+                    <option>VIOLET</option>
+                    <option>JAUNE</option>
+                    <option>ROUGE</option>
                 </select>
             </form>
             <p>Dimension du tank :  8,7m x 2,7m x 2,4m</p>
         </div>
     </main>
 
+    <!-- JS -->
     <script src="./src/js/slider.js"></script>
+    <script src="./src/js/bouton-quantite.js"></script>
 </body>
 </html>
