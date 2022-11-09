@@ -64,3 +64,18 @@
     height: 35px;
     padding-right: 56px;
 }
+
+@media screen and (max-width: 850px){
+    .image{
+        width: fit-content;
+    }
+
+    .logos{
+        flex-direction: column;
+    }
+    
+    .logos-img{
+        margin: auto;
+        height: 40px;
+    }
+}
