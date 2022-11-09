@@ -3,6 +3,8 @@ const sliderBtnLeft = document.querySelector("#slider-btn-left");
 const sliderBtnRight = document.querySelector("#slider-btn-right");
 let activeSlide = 1;
 
+const slidesContainer = document.querySelector("#slides");
+
 function slideLeft(e) {
     activeSlide--;
 
@@ -47,3 +49,33 @@ window.addEventListener('load', (e) => {
 
 sliderBtnLeft.addEventListener("click", slideLeft);
 sliderBtnRight.addEventListener("click", slideRight);
+
+function changeScrollSnapAlign(value) {
+    slides.forEach(slide => {
+        slide.style.scrollSnapAlign = value;
+    });
+}
+
+function hoverEffect(cssClass, cssValue) {
+    slidesContainer.classList.add(cssClass);
+    changeScrollSnapAlign(cssValue);
+}
+
+function leaveHoverEffect(cssClass, cssValue) {
+    slidesContainer.classList.remove(cssClass);
+    changeScrollSnapAlign(cssValue);
+}
+
+sliderBtnRight.addEventListener("mouseover", (e) => {
+    hoverEffect("right-btn-hovered", "start");
+});
+sliderBtnRight.addEventListener("mouseout", (e) => {
+    leaveHoverEffect("right-btn-hovered", "start");
+});
+
+sliderBtnLeft.addEventListener("mouseover", (e) => {
+    hoverEffect("left-btn-hovered", "end");
+});
+sliderBtnLeft.addEventListener("mouseout", (e) => {
+    leaveHoverEffect("left-btn-hovered", "end");
+});
