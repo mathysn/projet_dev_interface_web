@@ -50,29 +50,29 @@
 
 .image{
     margin: auto;
+    margin-bottom: 48px;
 }
 
 .image img{
     width: 1114px;
     height: auto;
-    background-color: #eee;
-    margin-bottom: 48px;
 }
 
 .logos{
     display: flex;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 48px;
 }
 
 .logos-img{
     width: auto;
-    height: 35px;
-    padding-right: 56px;
+    height: 130px;
+    padding-right: 200px;
 }
 
 .logos-img.logos-last-img{
     padding-right: 0;
+    margin-bottom: 0;
 }
 
 @media screen and (max-width: 1200px){
@@ -83,19 +83,11 @@
 
 @media screen and (max-width: 900px){
     .logos-img{
-        padding-right: 30px;
-    }
-
-    .logos-img.logos-last-img{
-        padding-right: 0;
+        padding-right: 160px;
     }
 }
 
 @media screen and (max-width: 850px){
-    .image img{
-        width: 100%;
-    }
-
     .logos{
         flex-direction: column;
     }
@@ -103,7 +95,7 @@
     .logos-img{
         margin: auto;
         margin-bottom: 15px;
-        height: 40px;
+        height: 130px;
         padding-right: 0;
     }
 }
