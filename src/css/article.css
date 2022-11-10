@@ -26,6 +26,11 @@ main {
     margin: 100px;
 }
 
+main > * {
+    margin-left: 45px;
+    margin-right: 45px;
+}
+
 #slider {
     width: var(--slider-size);
     height: var(--slider-size);
@@ -91,11 +96,20 @@ main {
     scroll-snap-align: end;
 }
 
+#description {
+    width: 350px;
+}
+
+#description > * {
+    margin: 15px 0 15px 0;
+}
+
 #description h3 {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
     letter-spacing: -1.5px;
+    margin-top: 0;
 }
 
 #description #prix {
@@ -108,7 +122,13 @@ main {
     line-height: 26px;
 }
 
-.bouton-quantite {
+#boutons-personnalisation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#bouton-quantite {
     font-family: 'Inter', sans-serif;
     text-align: center;
     display: flex;
@@ -120,8 +140,8 @@ main {
     padding: 10px;
 }
 
-.bouton-quantite button {
-    outline:none;
+#bouton-quantite button {
+    outline: none;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -132,14 +152,14 @@ main {
     font-family: 'Inter', sans-serif;
 }
 
-.bouton-quantite #quantite-output {
+#bouton-quantite #quantite-output {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -0.3px;
 }
 
-.bouton-achat {
-    outline:none;
+#bouton-option {
+    outline: none;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -151,4 +171,45 @@ main {
     line-height: 26px;
     letter-spacing: -0.3px;
     padding: 10px;
+    margin-left: 15px;
+}
+
+#infos-supp {
+    color: var(--primary);
+    opacity: .5;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.4px;
+}
+
+#boutons-achat {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#boutons-achat > * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--bg-primary);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+}
+
+#ajout-panier {
+    background-color: var(--primary);
+    width: 200px;
+    height: 50px;
+}
+
+#acheter-maintenant {
+    background-color: #2F80ED;
+    width: 140px;
+    height: 50px;
+    margin-left: 15px;
 }
