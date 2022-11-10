@@ -1,0 +1,116 @@
+/* VARIABLES */
+:root {
+    --primary: #000000;
+    --secondary: #979797;
+    --bg-primary: #eff2f6;
+}
+
+/* GENERAL STYLE */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FOOTER */
+footer {
+    overflow-x: hidden;
+    font-family: 'Public Sans', sans-serif;
+    background-color: var(--bg-primary);
+    width: 100vw;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer > * {
+    margin-top: 50px;
+}
+
+footer #newsletter {
+    width: 401px;
+    color: var(--primary);
+    margin-right: 50px;
+}
+
+footer #newsletter h3 {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    letter-spacing: -1.5px;
+    margin-bottom: 10px;
+}
+
+footer #newsletter p {
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+    margin-bottom: 25px;
+}
+
+footer #newsletter #subscribe-newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--primary);
+    padding: 10px;
+}
+
+footer #subscribe-newsletter > * {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: -0.3px;
+}
+
+footer #subscribe-newsletter input {
+    width: 80%;
+}
+
+footer #subscribe-newsletter input::placeholder {
+    color: #A9ABBD;
+}
+
+footer #subscribe-newsletter button {
+    cursor: pointer;
+    font-weight: 700;
+}
+
+footer #footer-sections {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+footer .footer-section {
+    width: 190px;
+}
+
+footer .footer-section-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: -0.4px;
+}
+
+footer .footer-section ul {
+    list-style-type: none;
+    margin-top: 21px;
+}
+
+footer .footer-section ul > li {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.2px;
+    color: #111111;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
