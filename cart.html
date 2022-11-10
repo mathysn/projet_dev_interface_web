@@ -50,75 +50,87 @@
     </div>
 
     <div class="contener">
-        <h1 class="title">Your cart</h1>
-        <h5>Not ready to checkout? Continue Shopping</h5>
 
-        <div class="item-contener">
-            <div class="item">
-                <img class="image" src="src/img/tank-rigolo.png" alt="tank image">
-                <div class="item-in">
-                    <h3 class="item-title">Men's winter jacket</h3>
-                    <p class="item-size">Size: L</p>
-                    <p class="item-quantity">Quantity: 1</p>
-                    <div class="price-remove">
-                        <h4 class="item-price">$99</h4>
-                        <div class="contener-item-remove">
-                            <a class="item-remove" href="#">Remove</a>
+        <div class="sub-contener">
+            <div class="first-contener">
+                <h3 class="title">Your cart</h3>
+                <h5 class="subtitle">Not ready to checkout? Continue Shopping</h5>
+
+                <div class="item-contener">
+                    <div class="item">
+                        <img class="image" src="src/img/tank-rigolo.png" alt="tank image">
+                        <div class="item-in">
+                            <h3 class="item-title">Men's winter jacket</h3>
+                            <p class="item-size">Size: L</p>
+                            <p class="item-quantity">Quantity: 1</p>
+                            <div class="price-remove">
+                                <h4 class="item-price">$99</h4>
+                                <div class="contener-item-remove">
+                                    <a class="item-remove" href="#">Remove</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="divide-bar-grey"></div>
                 </div>
-            </div>
-            <div class="divide-bar-grey"></div>
-        </div>
 
-        <div class="item-contener">
-            <div class="item">
-                <img style="width: 129px; height: 133px;" src="src/img/tank-rigolo.png" alt="tank image">
-                <div class="item-in">
-                    <p class="item-title">Men's winter jacket</p>
-                    <p class="item-size">Size: L</p>
-                    <p class="item-quantity">Quantity: 1</p>
-                    <div class="price-remove">
-                        <h4 class="item-price">$99</h4>
-                        <div class="contener-item-remove">
-                            <a class="item-remove" href="#">Remove</a>
+                <div class="item-contener">
+                    <div class="item">
+                        <img class="image" src="src/img/tank-rigolo.png" alt="tank image">
+                        <div class="item-in">
+                            <p class="item-title">Men's winter jacket</p>
+                            <p class="item-size">Size: L</p>
+                            <p class="item-quantity">Quantity: 1</p>
+                            <div class="price-remove">
+                                <h4 class="item-price">$99</h4>
+                                <div class="contener-item-remove">
+                                    <a class="item-remove" href="#">Remove</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
+                    <div class="divide-bar-grey"></div>
                 </div>
             </div>
-            <div class="divide-bar-grey"></div>
-        </div>
-
-        <h4 class="order-title">Order Summary</h4>
-        <form action="" method="post">
-            <div>
-                <input class="coupon-code" type="text" id="coupon" name="coupon_code" placeholder="Enter coupon code here">
+            
+            <div class="second-contener">
+                <h4 class="order-title">Order Summary</h4>
+                <form action="" method="post">
+                    <p><input class="coupon-code" type="text" id="coupon" name="coupon_code" placeholder="Enter coupon code here"></p>
+                </form>
+                <div class="sub-price">
+                    <p>Subtotal</p>
+                    <p>$200</p>
+                </div>
+                <div class="shipping">
+                    <p>Shipping</p>
+                    <p id="calculated">Calculated at the next step</p>
+                </div>
+        
+                <div class="divide-bar"></div>
+        
+                <div class="total">
+                    <p>Total</p>
+                    <p id="total-price">$200</p>
+                </div>
+        
+                <button href="#" >Continue to checkout</button>
             </div>
-        </form>
-
-        <div class="sub-price">
-            <p>Subtotal</p>
-            <p>$200</p>
         </div>
-
-        <div class="shipping">
-            <p>Shipping</p>
-            <p id="calculated">Calculated at the next step</p>
-        </div>
-
-        <div class="divide-bar"></div>
-
-        <div class="total">
-            <p>Total</p>
-            <p id="total-price">$200</p>
-        </div>
-
-        <button href="#" >Continue to checkout</button>
 
         <h4>Order Information</h4>
+        <div class="divide-bar"></div>
+        <div class="contener-policy">
+            <div class="contener-policy-title">
+                <h5 class="policy">Return Policy</h5>
+                <i class="fa-solid fa-minus fa-plus"></i>
+            </div>
+            <p>This is our example return policy which is everything you need to know about our returns.</p>
+        </div>
     </div>
 </body>
 
+<script src="https://kit.fontawesome.com/5d7a797ca3.js" crossorigin="anonymous"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 
 </html>

@@ -2,17 +2,21 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Public Sans;
+    font-family: 'Public Sans';
+    font-style: normal;
 }
 
 .contener {
-    width: 316px;
-    margin-left: 38px;
-    margin-right: 38px;
+    position: absolute;
+    left: 38px;
+    right: 38px;
 }
 
 .title {
     margin-top: 28px;
+    margin-bottom: 5px;
+    font-size: 36px;
+    line-height: 44px;
 }
 
 .item {
@@ -24,9 +28,14 @@
     height: 133px;
 }
 
+.subtitle {
+    margin-bottom: 26px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+
 .item-in {
-    position: absolute;
-    margin-left: 141px;
     padding-top: 6px;
     padding-bottom: 5px;
     display: block;
@@ -55,8 +64,6 @@
 
 .item-price {
     margin-top: 7px;
-    font-family: 'Public Sans';
-    font-style: normal;
     height: 30px;
     width: 81px;
     font-size: 22px;
@@ -80,7 +87,6 @@
 }
 
 .title-order {
-    font-family: 'Public Sans';
     margin-top: 29px;
     font-style: normal;
     font-weight: 600;
@@ -88,8 +94,12 @@
     line-height: 30px;
 }
 
+form{
+    text-align: center;
+}
+
 .coupon-code {
-    width: 300px;
+    width: 284px;
     height: 40px;
     margin-top: 19px;
     padding-left: 16px;
@@ -143,4 +153,76 @@ button {
     color: white;
     border: 1px black;
     text-align: center;
+}
+
+.contener-policy {
+    width: 100%;
+    color:#909090;
+}
+
+.contener-policy-title {
+    width: 100%;
+    margin-bottom: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.policy {
+    font-size: 16px;
+    line-height: 22px;
+}
+
+i {
+    padding-top: 2px;
+}
+
+@media only screen and (min-width: 1300px) {
+    .contener {
+        left: 141px;
+        right: 211px;
+    }
+}
+
+@media only screen and (min-width: 959px) {
+
+    .sub-contener {
+        display: flex;
+    }
+
+    .first-contener {
+        width: 560px;
+    }
+
+    .second-contener {
+        position: absolute;
+        right: 0px;
+        margin-top: 80px;
+        width: 402px;
+    }
+
+    .price-remove {
+        width: 418px;
+    }
+
+    .item-in {
+        margin-left: 12px;
+    }
+
+    .sub-price {
+        margin-top: 27px;
+    }
+}
+
+@media only screen and (min-width: 959px) and (max-width: 1090px) {
+    .second-contener {
+        width: 302px;
+    }
+}
+
+@media only screen and (max-width: 959px) {
+    .item-in {
+        position: absolute;
+        left: 141px;
+        right: 0px;
+    }
 }
