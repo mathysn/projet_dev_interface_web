@@ -96,15 +96,15 @@ main > * {
     scroll-snap-align: end;
 }
 
-#description {
+#infos {
     width: 350px;
 }
 
-#description > * {
+#infos > * {
     margin: 15px 0 15px 0;
 }
 
-#description h3 {
+#infos h3 {
     font-weight: 600;
     font-size: 36px;
     line-height: 44px;
@@ -113,28 +113,28 @@ main > * {
     margin-bottom: 2px;
 }
 
-#description #prix, #description #prix-responsive {
+#infos #price, #infos #price-responsive {
     font-size: 24px;
     line-height: 36px;
     margin-top: 0;
 }
 
-#description #prix-responsive {
+#infos #price-responsive {
     display: none;
 }
 
-#description #libelle {
+#infos #description {
     font-size: 18px;
     line-height: 26px;
 }
 
-#boutons-personnalisation {
+#customization-buttons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-#bouton-quantite {
+#quantity-button {
     font-family: 'Inter', sans-serif;
     text-align: center;
     display: flex;
@@ -146,7 +146,7 @@ main > * {
     padding: 10px;
 }
 
-#bouton-quantite button {
+#quantity-button button {
     outline: none;
     background-color: transparent;
     border: none;
@@ -158,13 +158,13 @@ main > * {
     font-family: 'Inter', sans-serif;
 }
 
-#bouton-quantite #quantite-output {
+#quantity-button #quantity-output {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -0.3px;
 }
 
-#bouton-option {
+#color-button {
     outline: none;
     background-color: transparent;
     border: none;
@@ -180,7 +180,7 @@ main > * {
     margin-left: 15px;
 }
 
-#infos-supp {
+#extra-info {
     color: var(--primary);
     opacity: .5;
     font-family: 'Inter', sans-serif;
@@ -189,14 +189,14 @@ main > * {
     letter-spacing: -0.4px;
 }
 
-#boutons-achat {
+#purchase-buttons {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     margin-top: 22px;
 }
 
-#boutons-achat > * {
+#purchase-buttons > * {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -208,13 +208,13 @@ main > * {
     letter-spacing: -0.4px;
 }
 
-#ajout-panier {
+#add-cart-button {
     background-color: var(--primary);
     width: 200px;
     height: 50px;
 }
 
-#acheter-maintenant {
+#buy-now-button {
     background-color: #2F80ED;
     width: 140px;
     height: 50px;
@@ -238,15 +238,15 @@ main > * {
         bottom: calc(350px/2 + var(--slider-btn-size)/2);
     }
 
-    #description {
+    #infos {
         margin-top: 15px;
     }
 
-    #description #prix {
+    #infos #price {
         display: none;
     }
 
-    #description #prix-responsive {
+    #infos #price-responsive {
         display: block;
     }
 }

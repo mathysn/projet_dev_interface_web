@@ -1,6 +1,6 @@
-const addBtn = document.querySelector("#quantite-add");
-const removeBtn = document.querySelector("#quantite-remove");
-const output = document.querySelector("#quantite-output");
+const addBtn = document.querySelector("#quantity-add");
+const removeBtn = document.querySelector("#quantity-remove");
+const output = document.querySelector("#quantity-output");
 let counter = 1;
 
 addBtn.addEventListener("click", (e) => {
