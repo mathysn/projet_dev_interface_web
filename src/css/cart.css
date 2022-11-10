@@ -155,6 +155,11 @@ button {
     text-align: center;
 }
 
+button:hover {
+    cursor: pointer;
+    background-color: rgb(37, 37, 37);
+}
+
 .contener-policy {
     width: 100%;
     color:#909090;
@@ -183,7 +188,7 @@ i {
     }
 }
 
-@media only screen and (min-width: 959px) {
+@media only screen and (min-width: 960px) {
 
     .sub-contener {
         display: flex;
@@ -211,12 +216,23 @@ i {
     .sub-price {
         margin-top: 27px;
     }
+
+    form {
+        width: 100%;
+        text-align: start;
+    }
+
+    input {
+        width: 100%;
+    }
 }
 
-@media only screen and (min-width: 959px) and (max-width: 1090px) {
+@media only screen and (min-width: 960px) and (max-width: 1090px) {
     .second-contener {
         width: 302px;
     }
+
+
 }
 
 @media only screen and (max-width: 959px) {
@@ -225,4 +241,8 @@ i {
         left: 141px;
         right: 0px;
     }
+}
+
+@media only screen and (max-width: 390px) {
+
 }
