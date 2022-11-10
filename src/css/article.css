@@ -23,7 +23,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: start;
-    margin: 100px;
+    margin-top: 100px;
 }
 
 main > * {
@@ -110,11 +110,17 @@ main > * {
     line-height: 44px;
     letter-spacing: -1.5px;
     margin-top: 0;
+    margin-bottom: 2px;
 }
 
-#description #prix {
+#description #prix, #description #prix-responsive {
     font-size: 24px;
     line-height: 36px;
+    margin-top: 0;
+}
+
+#description #prix-responsive {
+    display: none;
 }
 
 #description #libelle {
@@ -187,6 +193,7 @@ main > * {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 22px;
 }
 
 #boutons-achat > * {
@@ -212,4 +219,34 @@ main > * {
     width: 140px;
     height: 50px;
     margin-left: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    #slider, #slider #slides, #slider .slide {
+        width: 350px;
+        height: 350px;
+    }
+
+    #slider-buttons {
+        bottom: calc(350px/2 + var(--slider-btn-size)/2);
+    }
+
+    #description {
+        margin-top: 15px;
+    }
+
+    #description #prix {
+        display: none;
+    }
+
+    #description #prix-responsive {
+        display: block;
+    }
 }

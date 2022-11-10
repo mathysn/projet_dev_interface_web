@@ -67,11 +67,12 @@
                 This pack contains 4 vehicules : a tank, a fighter, an armored vehicle and a Jeep.
                 Guaranteed 2 years, and if you find it cheaper elsewhere, we will refund you twice the difference!
             </p>
+            <p id="prix-responsive">$20,000</p>
             <form id="boutons-personnalisation">
                 <div id="bouton-quantite">
-                    <button id="quantite-remove" onclick="this.parentNode.querySelector('#quantite').textContent = parseInt(this.parentNode.querySelector('quantite').textContent, 10) - 1">-</button>
+                    <button id="quantite-remove">-</button>
                     <span id="quantite-output">1</span>
-                    <button id="quantite-add" onclick="this.parentNode.querySelector('#quantite').textContent = parseInt(this.parentNode.querySelector('quantite').textContent, 10) + 1" class="plus">+</button>
+                    <button id="quantite-add" class="plus">+</button>
                 </div>
                 <select id="bouton-option">
                     <option>GREEN</option>

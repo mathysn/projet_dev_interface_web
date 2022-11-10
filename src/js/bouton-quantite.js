@@ -12,6 +12,6 @@ addBtn.addEventListener("click", (e) => {
 removeBtn.addEventListener("click", (e) => {
     e.preventDefault();
 
-    if (counter <= 0) return;
+    if (counter <= 1) return;
     output.textContent = --counter;
 });
