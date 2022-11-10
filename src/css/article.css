@@ -121,6 +121,7 @@ main > * {
 #infos #price, #infos #price-responsive {
     font-size: 24px;
     line-height: 36px;
+    letter-spacing: -3%;
     margin-top: 0;
 }
 
@@ -129,8 +130,9 @@ main > * {
 }
 
 #infos #description {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 17px;
+    line-height: 24px;
+    letter-spacing: -3%;
 }
 
 #customization-buttons {
@@ -163,7 +165,7 @@ main > * {
     font-family: 'Inter', sans-serif;
 }
 
-#quantity-button #quantity-output {
+#quantity-button #quantity-output, #color-button {
     font-size: 18px;
     line-height: 26px;
     letter-spacing: -0.3px;
@@ -178,9 +180,6 @@ main > * {
     border: 1px solid var(--primary);
     width: 168px;
     height: 50px;
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: -0.3px;
     padding: 10px;
     margin-left: 15px;
 }
