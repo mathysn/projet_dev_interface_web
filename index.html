@@ -11,6 +11,8 @@
         <link rel="stylesheet" href="src/css/navbar-white.css">
         <link rel="stylesheet" href="src/css/responsive-navbar.css">
 
+        <link rel="icon" href="src/img/favicon-32x32.png">
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
@@ -18,24 +20,26 @@
     </head>
 
     <body>
+        <audio id="player" src="src/img/wii-party-phil.mp3"></audio>
         <header>
             <nav>
                 <ul class="navbar-links">
                     <li class="navbar-item nav-title"><a href="#">Army Shop</a></li>
-                    <li class="navbar-item item"><a href="#">Shop</a></li>
+                    <li class="navbar-item item"><a href="market.html">Shop</a></li>
                     <li class="navbar-item item"><a href="#">Stories</a></li>
                     <li class="navbar-item item"><a href="#">About</a></li>
                     <li class="navbar-item item"><a href="#"><iconify-icon id="search-icon" inline icon="bi:search"></iconify-icon></a><input type="text" placeholder="Search"></li>
                 </ul>
 
                 <ul class="navbar-links">
-                    <li class="navbar-item"><a href="cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>3</a></li>
-                    <li class="navbar-item"><a href="#">Login</a></li>
+                    <li class="navbar-item"><a href="cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2</a></li>
+                    <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
                 </ul>
 
                 
             </nav>
             <div class="responsive-navbar">
+                <p class="nav-title res-nav-title">Army Shop</p>
                 <a class="nav-icon" href="#">
                     <div class="bar"></div>
                     <div class="space"></div>
@@ -59,7 +63,7 @@
                 </p>
             </div>
             <div class="button">
-                <a href="#">Shop All</a>
+                <a href="market.html">Shop All</a>
             </div>
             <div class="image">
                 <img src="src/img/home-image.png" alt="">
