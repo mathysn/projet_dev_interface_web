@@ -1,3 +1,4 @@
+/* VARIABLES */
 :root {
     --primary: #000000;
     --secondary: #979797;
@@ -7,6 +8,7 @@
     --slider-btn-size: 57px;
 }
 
+/* GENERAL STYLE */
 * {
     padding: 0;
     margin: 0;
@@ -19,6 +21,7 @@ body {
     background-color: var(--bg-primary);
 }
 
+/* MAIN CONTENT */
 main {
     display: flex;
     justify-content: center;
@@ -31,12 +34,13 @@ main > * {
     margin-right: 45px;
 }
 
+/* SLIDER */
 #slider {
     width: var(--slider-size);
     height: var(--slider-size);
 }
 
-#slider a {
+#slider-buttons a {
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -96,6 +100,7 @@ main > * {
     scroll-snap-align: end;
 }
 
+/* PRODUCT INFORMATIONS */
 #infos {
     width: 350px;
 }
@@ -221,6 +226,7 @@ main > * {
     margin-left: 15px;
 }
 
+/* RESPONSIVE */
 @media screen and (max-width: 1024px) {
     main {
         flex-direction: column;
