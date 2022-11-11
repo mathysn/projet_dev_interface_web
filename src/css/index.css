@@ -61,7 +61,7 @@
 .logos{
     display: flex;
     justify-content: center;
-    margin-bottom: 48px;
+    margin-bottom: -55px;
 }
 
 .logos-img{
@@ -94,6 +94,10 @@
 
     .logos{
         flex-direction: column;
+    }
+
+    .title{
+        margin-top: 10px;
     }
     
     .logos-img{

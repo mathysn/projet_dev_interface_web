@@ -24,11 +24,6 @@ nav{
     font-size: 20px;
 }
 
-.item{
-    font-weight: 400;
-    font-size: 17px;
-}
-
 .navbar-item a{
     display: inline-block;
     font-family: Inter, sans-serif;

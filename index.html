@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="src/css/index.css">
         <link rel="stylesheet" href="src/css/navbar-white.css">
         <link rel="stylesheet" href="src/css/responsive-navbar.css">
+        <link rel="stylesheet" href="./src/css/footer.css">
 
         <link rel="icon" href="src/img/favicon-32x32.png">
 
@@ -35,20 +36,28 @@
                     <li class="navbar-item"><a href="cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2</a></li>
                     <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
                 </ul>
-
-                
             </nav>
-            <div class="responsive-navbar">
-                <p class="nav-title res-nav-title">Army Shop</p>
-                <a class="nav-icon" href="#">
-                    <div class="bar"></div>
-                    <div class="space"></div>
-                    <div class="bar"></div>
-                    <div class="space"></div>
-                    <div class="bar"></div>
-                    <div class="space"></div>
-                    <div class="bar"></div>
-                </a>
+            <div class="res-nav-container">
+                <div class="responsive-navbar">
+                    <p class="nav-title res-nav-title">Army Shop</p>
+                    <div class="nav-icon">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar last-bar"></div>
+                    </div>
+                </div>
+                <div class="res-navbar-links-container">
+                    <ul class="res-navbar-links ul-left">
+                        <li class="navbar-item item"><a href="market.html">Shop</a></li>
+                        <li class="navbar-item item"><a href="#">Stories</a></li>
+                        <li class="navbar-item item"><a href="#">About</a></li>
+                    </ul>
+                    <ul class="res-navbar-links ul-right">
+                        <li class="navbar-item"><a href="cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2</a></li>
+                        <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
 
@@ -66,7 +75,7 @@
                 <a href="market.html">Shop All</a>
             </div>
             <div class="image">
-                <img src="src/img/home-image.png" alt="image d'accueil">
+                <img src="src/img/home-image.png" alt="home page image">
             </div>
             <div class="logos">
                 <img class="logos-img" src="src/img/us-army.png" alt="us army logo">
@@ -75,6 +84,52 @@
             </div>
         </div>
 
+        <footer>
+            <div id="newsletter">
+                <h3>Sign up for our newsletter</h3>
+                <p>Be the first to know about our special offers, new product launchers, and events.</p>
+                <div id="subscribe-newsletter">
+                    <input type="text" placeholder="Email Address">
+                    <button>Sign up</button>
+                </div>
+            </div>
+            <div id="footer-sections">
+                <div class="footer-section">
+                    <h5 class="footer-section-title">Shop</h5>
+                    <ul>
+                        <li>Tanks</li>
+                        <li>Fighters</li>
+                        <li>Armoured Vehicules</li>
+                        <li>Jeeps</li>
+                        <li>Equipment</li>
+                        <li>By Activity</li>
+                        <li>Gift Cards</li>
+                        <li>Sale</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5 class="footer-section-title">Help</h5>
+                    <ul>
+                        <li>Help Center</li>
+                        <li>Order Status</li>
+                        <li>Size Chart</li>
+                        <li>Returns & Warranty</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h5 class="footer-section-title">About</h5>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Responsibility</li>
+                        <li>Technology & Innovation</li>
+                        <li>Explore our stories</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
         <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+        <script src="src/js/navbar.js"></script>
     </body>
 </html>
