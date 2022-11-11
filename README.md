@@ -9,6 +9,7 @@ Membres du groupe 4 :
 Maquette: https://www.figma.com/file/YS88fIlPDDfvdcwiBBas1w/Ecommerce-Wireframe
 
 
-##Sujet du site 
+#Sujet du site :
+
 Ce site a pour sujet principal la vente de véhicules armées américain 
 
