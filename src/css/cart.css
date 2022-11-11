@@ -285,8 +285,15 @@ footer {
 }
 
 @media only screen and (max-width: 850px) {
-    .contener {
-        top: 64px;
+    .contener{
+        margin-top: 64px;
+    }
+
+    .margin-32 {
+        margin-top: 0px;
+        transition-delay: 0.5s;
+        transition-timing-function: ease-in-out;
+        transition-duration: 0.5s;
     }
 }
 
