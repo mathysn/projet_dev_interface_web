@@ -1,0 +1,730 @@
+ /*Checkbox filtre*/
+
+ .catégories {
+    display: block;
+    position: relative;
+    padding-left: 177px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.catégories input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+}
+
+.catégories:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.catégories input:checked ~ .checkmark {
+    background-color: #ccc;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.catégories input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.catégories .checkmark:after {
+    left: 4.5px;
+    top: 2.5px;
+    width: 2.5px;
+    height: 5px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+
+/*Palette couleurs1*/
+
+
+
+/*Taupe*/
+.couleurs-taupe {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-taupe input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-taupe {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #DF9167;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-taupe:hover input ~ .checkmark-taupe {
+    background-color: #DF9167;
+}
+
+.couleurs-taupe input:checked ~ .checkmark-taupe {
+    background-color: #DF9167;
+}
+
+.checkmark-taupe:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-taupe input:checked ~ .checkmark-taupe:after {
+    display: block;
+}
+
+.couleurs-taupe .checkmark-taupe:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+
+/*Mauve*/
+.couleurs-mauve {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-mauve input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-mauve {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #7B61FF;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-mauve:hover input ~ .checkmark-mauve {
+    background-color: #7B61FF;
+}
+
+.couleurs-mauve input:checked ~ .checkmark-mauve {
+    background-color: #7B61FF;
+}
+
+.checkmark-mauve:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-mauve input:checked ~ .checkmark-mauve:after {
+    display: block;
+}
+
+.couleurs-mauve .checkmark-mauve:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*vert*/
+.couleurs-vert {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-vert input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-vert {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #219653;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-vert:hover input ~ .checkmark-vert {
+    background-color: #219653;
+}
+
+.couleurs-vert input:checked ~ .checkmark-vert {
+    background-color: #219653;
+}
+
+.checkmark-vert:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-vert input:checked ~ .checkmark-vert:after {
+    display: block;
+}
+
+.couleurs-vert .checkmark-vert:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*bleu*/
+.couleurs-bleu {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 75px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-bleu input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-bleu {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #2F80ED;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-bleu:hover input ~ .checkmark-bleu {
+    background-color: #2F80ED;
+}
+
+.couleurs-bleu input:checked ~ .checkmark-bleu {
+    background-color: #2F80ED;
+}
+
+.checkmark-bleu:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-bleu input:checked ~ .checkmark-bleu:after {
+    display: block;
+}
+
+.couleurs-bleu .checkmark-bleu:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*bleu*/
+.couleurs-rouge {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-rouge input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-rouge {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #EB5757;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-rouge:hover input ~ .checkmark-rouge {
+    background-color: #EB5757;
+}
+
+.couleurs-rouge input:checked ~ .checkmark-rouge {
+    background-color: #EB5757;
+}
+
+.checkmark-rouge:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-rouge input:checked ~ .checkmark-rouge:after {
+    display: block;
+}
+
+.couleurs-rouge .checkmark-rouge:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*Palette couleurs 2*/
+
+/*Cyan*/
+.couleurs-cyan {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-cyan input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-cyan {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #56CCF2;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-cyan:hover input ~ .checkmark-taupe {
+    background-color: #56CCF2;
+}
+
+.couleurs-cyan input:checked ~ .checkmark-cyan {
+    background-color: #56CCF2;
+}
+
+.checkmark-cyan:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-cyan input:checked ~ .checkmark-cyan:after {
+    display: block;
+}
+
+.couleurs-cyan .checkmark-cyan:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+
+/*Noir*/
+.couleurs-noir {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 25px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-noir input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-noir {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #4F4F4F;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-noir:hover input ~ .checkmark-noir {
+    background-color: #4F4F4F;
+}
+
+.couleurs-noir input:checked ~ .checkmark-noir {
+    background-color: #4F4F4F;
+}
+
+.checkmark-noir:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-noir input:checked ~ .checkmark-noir:after {
+    display: block;
+}
+
+.couleurs-noir .checkmark-noir:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*rose*/
+.couleurs-rose {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-rose input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-rose {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #BB6BD9;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-rose:hover input ~ .checkmark-rose {
+    background-color: #BB6BD9;
+}
+
+.couleurs-rose input:checked ~ .checkmark-rose {
+    background-color: #BB6BD9;
+}
+
+.checkmark-rose:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-rose input:checked ~ .checkmark-rose:after {
+    display: block;
+}
+
+.couleurs-rose .checkmark-rose:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*blanc*/
+.couleurs-blanc {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 75px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-blanc input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-blanc {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #F2F2F2;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-blanc:hover input ~ .checkmark-blanc {
+    background-color: #F2F2F2;
+}
+
+.couleurs-blanc input:checked ~ .checkmark-blanc {
+    background-color: #F2F2F2;
+}
+
+.checkmark-blanc:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-blanc input:checked ~ .checkmark-blanc:after {
+    display: block;
+}
+
+.couleurs-blanc .checkmark-blanc:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 
+
+/*emeraude*/
+.couleurs-emeraude {
+    display: inline-block;
+    position: relative;
+    padding-left: 8px;
+    margin-bottom: 0px;
+    left: 100px;
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width:fit-content;
+    height: fit-content;
+}
+
+.couleurs-emeraude input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark-emeraude {
+    position: absolute;
+    top: 0;
+    left: 145px;
+    height: 25px;
+    width: 25px;
+    background-color: #6FCF97;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.couleurs-emeraude:hover input ~ .checkmark-emeraude {
+    background-color: #6FCF97;
+}
+
+.couleurs-emeraude input:checked ~ .checkmark-emeraude {
+    background-color: #6FCF97;
+}
+
+.checkmark-emeraude:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.couleurs-emeraude input:checked ~ .checkmark-emeraude:after {
+    display: block;
+}
+
+.couleurs-emeraude .checkmark-emeraude:after {
+    left: 6px;
+    top: 0px;
+    width: 10px;
+    height: 18px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+} 

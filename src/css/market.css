@@ -1,0 +1,256 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Public Sans;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+  
+
+/* Banderole en dessous de la navbar*/
+
+    .banderole{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 216px;
+        padding-left: 145px;
+        padding-top: 34px;
+        background-color: black;
+        }
+
+    .titre-banderole{
+        display: flex;
+        width: auto;
+        height: 48px;
+        padding-left: 0px;
+        padding-top: 34px;
+        font-size: xx-large;
+        color: white;
+
+    }
+    .paragraphe-banderole{
+        display: flex;
+        width: 476px;
+        height: 78px;
+        padding-left: 0px;
+        padding-top: 25px;
+        font-size: medium;
+        color: white;
+    }
+
+
+/*Filtre*/
+
+    .filtre{
+        width: auto;
+        height: auto;
+        display: flex;
+        padding-left: 145px ;
+    }
+
+    .titre-filtre{
+        display: flex;
+        width: 75px;
+        height: auto;
+        padding-left: 0px;
+        padding-top: 43px;
+    }
+    
+
+    .clear-filtre{
+        display: flex;
+        width: auto;
+        height: auto;
+        padding-top: 43px;
+        padding-right: 1200px;
+        text-decoration-line: underline;
+        color: #C4C4C4;
+    }
+
+
+    .titre-catégories{
+        display: flex;
+        width: 69px;
+        height: 20px;
+        padding-left: 145px;
+        padding-top: 19px;
+        padding-bottom: 21px;
+    }
+
+    .filtre-catégorie{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 10px;
+        width: auto;
+        height: auto;
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+
+    /*order-by*/
+        .filtre-par{
+            display: flex;
+            flex-direction: column;
+            padding-left: 0px;
+            padding-right: auto;
+            padding-top: 0px;
+            margin-top: 20px;
+            width: 155px;
+            height: auto;
+            border:1px solid black
+        }
+
+        .order-by{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            width: 100px;
+            height: 50px;
+        }
+
+        .order-by-deroulant{
+            display: flex;
+            outline: none;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            margin: 0;
+            width: auto;
+            height: 50px;
+            padding: 0px;
+            padding-left: 70px;
+        }
+
+    /*couleurs*/
+
+        .titre-couleurs{
+            display: flex;
+            width: 35px;
+            height: 20px;
+            padding-left: 145px;
+            padding-top: 19px;
+            padding-bottom: 20px;
+        }
+
+        .filtre-couleurs{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 9px;
+            width: auto;
+            height: auto;
+            padding-top: 0px;
+        }
+            
+        /*Pallette de couleur 1*/
+
+            .palette-couleurs1{
+                width: auto;
+                height: auto;
+                padding-left: 0px;
+                padding-top:0px;
+            }
+                
+
+        /*Pallette de couleur 2*/
+
+            .palette-couleurs2{
+                width: auto;
+                height: auto;
+                padding-left: 0px;
+                padding-top: 9px;
+            }
+            
+    
+/*galerie*/
+    
+    .galerie{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: auto;
+        height: 700px;
+        padding-left: 300px;
+        padding-bottom: 200px;
+        top:413px;
+        bottom: 200px;
+    }
+
+    .galerie ul {
+        overflow: hidden;
+        margin: 0 -10px;
+        padding: 0;
+        list-style: none;
+      }
+      .galerie li {
+        float: left;
+        width: calc(33.333333% - 20px);
+        margin: 0 10px 20px 10px;
+      }
+      
+    
+    .cards{
+        padding-left: 100px;
+        height: auto;
+        width: auto;
+    }
+
+    .image-galerie{
+        width: 264.03px;
+        height: 264.03px;
+
+    }
+
+    .titre-galerie{
+        left: 0%;
+        right: 9.93%;
+        top: 83.78%;
+        bottom: 7.96%;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+    .prix-galerie{
+        left: 0%;
+        right: 43.75%;
+        top: 91.74%;
+        bottom: 0%;
+
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 28px;
+    }
+
+
+    .voir-plus{
+        display: flex;
+        flex-direction: column;
+        width: 298px;
+        height: 50px;
+        padding-left: 0px;
+        padding-top: 0px;
+        margin-top: 410px;
+        margin-left: 900px;
+        border:1px solid black
+    }
+
+    .text-voirplus{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 14px;
+
+    }
