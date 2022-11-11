@@ -13,3 +13,9 @@ Maquette: https://www.figma.com/file/YS88fIlPDDfvdcwiBBas1w/Ecommerce-Wireframe
 
 Ce site a pour sujet principal la vente de véhicules armées américain 
 
+## Auteur des éléments du site
+
+- Lucas DA SILVEIRA = Page market
+- Tom SIOUAN = Page cart
+- Mathys NOURRY = Page index + navbar
+- Ewan HUMBERT = Page product + footer
