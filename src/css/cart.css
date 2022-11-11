@@ -18,6 +18,7 @@ body {
 
 footer {
     transform: translateX(-38px);
+    -webkit-transform: translate(-38px)
 }
 
 .title {
@@ -222,6 +223,7 @@ footer {
 
     footer {
         transform: translateX(-141px);
+        -webkit-transform: translate(-141px)
     }
 }
 
@@ -297,6 +299,7 @@ footer {
 
     footer {
         transform: translateX(-18px);
+        -webkit-transform: translate(-18px)
     }
 
     .item-title {
