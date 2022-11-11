@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Market</title>
+
+  <link rel="stylesheet" href="src/css/market.css">
+  <link rel="stylesheet" href="src/css/checkbox-market.css">
+  <link rel="stylesheet" href="src/css/navbar-black.css">
+  <link rel="stylesheet" href="src/css/responsive-navbar.css">
+  <link rel="stylesheet" href="src/css/footer.css">
+  <link rel="stylesheet" href="src/js/navbar.js">
+
+  <link rel="icon" href="src/img/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <audio id="player" src="src/img/wii-party-phil.mp3"></audio>
+  <header>
+    <nav>
+      <ul class="navbar-links">
+        <li class="navbar-item nav-title"><a href="index.html">Army Shop</a></li>
+        <li class="navbar-item item"><a href="market.html">Shop</a></li>
+        <li class="navbar-item item"><a href="#">Stories</a></li>
+        <li class="navbar-item item"><a href="#">About</a></li>
+        <li class="navbar-item item"><a href="#">
+            <iconify-icon id="search-icon" inline icon="bi:search"></iconify-icon>
+          </a><input type="text" placeholder="Search"></li>
+      </ul>
+  
+      <ul class="navbar-links">
+        <li class="navbar-item"><a href="cart.html">
+            <iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2
+          </a></li>
+        <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
+      </ul>
+    </nav>
+    <div class="res-nav-container">
+      <div class="responsive-navbar">
+        <a class="nav-title res-nav-title" href="index.html">Army Shop</a>
+        <div class="nav-icon">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar last-bar"></div>
+        </div>
+      </div>
+      <div class="res-navbar-links-container">
+        <ul class="res-navbar-links ul-left">
+          <li class="navbar-item item"><a href="market.html">Shop</a></li>
+          <li class="navbar-item item"><a href="#">Stories</a></li>
+          <li class="navbar-item item"><a href="#">About</a></li>
+        </ul>
+        <ul class="res-navbar-links ul-right">
+          <li class="navbar-item"><a href="cart.html">
+              <iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2
+            </a></li>
+          <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <div class="banderole">
+        <div class="titre-banderole">
+          <p>Shop Men's</p>
+        </div>
+        <div class="paragraphe-banderole">
+          <p>Revamp your style with the latest designer trends in men’s clothing or achieve a perfectly curated wardrobe
+            thanks to our line-up of timeless pieces. </p>
+        </div>
+      </div>
+      <div class="filtre">
+        <div class="titre-filtre">
+          <p><strong>Filters</strong></p>
+        </div>
+      
+        <div class="clear-filtre">
+          <p>clear filters</p>
+        </div>
+      
+        <div class="filtre-par">
+          <div class="order-by">
+            <p>Sort by</p>
+          </div>
+      
+          <select class="order-by-deroulant">
+            <option>Popular</option>
+            <option>Newest</option>
+            <option>High-Low</option>
+            <option>Low-High</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="titre-catégories">
+        <p><strong>Categories</strong></p>
+      </div>
+
+      <div class="filtre-catégorie">
+        <label class="catégories">Jackets
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="catégories">Fleece
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="catégories">Sweatshirts & Hoodies
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="catégories">Sweaters
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="catégories">Shirts
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="catégories">T-Shirts
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+
+        <label class="catégories">Pants & Jeans
+          <input type="checkbox">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+
+      <div class="titre-couleurs">
+        <p><strong>Color</strong></p>
+      </div>
+
+      <div class="filtre-couleurs">
+        <div class="palette-couleurs1">
+          <label class="couleurs-taupe">
+            <input type="checkbox">
+            <span class="checkmark-taupe"></span>
+          </label>
+
+          <label class="couleurs-mauve">
+            <input type="checkbox">
+            <span class="checkmark-mauve"></span>
+          </label>
+
+          <label class="couleurs-vert">
+            <input type="checkbox">
+            <span class="checkmark-vert"></span>
+          </label>
+
+          <label class="couleurs-bleu">
+            <input type="checkbox">
+            <span class="checkmark-bleu"></span>
+          </label>
+
+          <label class="couleurs-rouge">
+            <input type="checkbox">
+            <span class="checkmark-rouge"></span>
+          </label>
+        </div>
+
+        <div class="palette-couleurs2">
+
+          <label class="couleurs-cyan">
+            <input type="checkbox">
+            <span class="checkmark-cyan"></span>
+          </label>
+
+          <label class="couleurs-noir">
+            <input type="checkbox">
+            <span class="checkmark-noir"></span>
+          </label>
+
+          <label class="couleurs-rose">
+            <input type="checkbox">
+            <span class="checkmark-rose"></span>
+          </label>
+
+          <label class="couleurs-blanc">
+            <input type="checkbox">
+            <span class="checkmark-blanc"></span>
+          </label>
+
+          <label class="couleurs-emeraude">
+            <input type="checkbox">
+            <span class="checkmark-emeraude"></span>
+          </label>
+        </div>
+      </div>
+      <div class="galerie">
+        <div class="cards">
+          <ul>
+            <li class="card">
+              <img class="image-galerie" src="src/img/test.png">
+              <div class="titre-galerie">
+                Men’s Winter Jacket
+              </div>
+              <div class="prix-galerie">
+                99$
+              </div>
+            </li>
+            <li class="card">
+              <img class="image-galerie" src="src/img/test.png">
+              <div class="titre-galerie">
+                Men’s Winter Jacket
+              </div>
+              <div class="prix-galerie">
+                99$
+              </div>
+            </li>
+            <li class="card">
+              <img class="image-galerie" src="src/img/test.png">
+              <div class="titre-galerie">
+                Men’s Winter Jacket
+              </div>
+              <div class="prix-galerie">
+                99$
+              </div>
+            </li>
+            <li class="card">
+              <img class="image-galerie" src="src/img/test.png">
+              <div class="titre-galerie">
+                Men’s Winter Jacket
+              </div>
+              <div class="prix-galerie">
+                99$
+              </div>
+            </li>
+            <li class="card">
+              <img class="image-galerie" src="src/img/test.png">
+              <div class="titre-galerie">
+                Men’s Winter Jacket
+              </div>
+              <div class="prix-galerie">
+                99$
+              </div>
+            </li>
+            <li class="card">
+              <img class="image-galerie" src="src/img/test.png">
+              <div class="titre-galerie">
+                Men’s Winter Jacket
+              </div>
+              <div class="prix-galerie">
+                99$
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="voir-plus">
+        <div class="text-voirplus">
+          <p>Load more products</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div id="newsletter">
+      <h3>Sign up for our newsletter</h3>
+      <p>Be the first to know about our special offers, new product launchers, and events.</p>
+      <div id="subscribe-newsletter">
+        <input type="text" placeholder="Email Address">
+        <button>Sign up</button>
+      </div>
+    </div>
+    <div id="footer-sections">
+      <div class="footer-section">
+        <h5 class="footer-section-title">Shop</h5>
+        <ul>
+          <li>Tanks</li>
+          <li>Fighters</li>
+          <li>Armoured Vehicules</li>
+          <li>Jeeps</li>
+          <li>Equipment</li>
+          <li>By Activity</li>
+          <li>Gift Cards</li>
+          <li>Sale</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5 class="footer-section-title">Help</h5>
+        <ul>
+          <li>Help Center</li>
+          <li>Order Status</li>
+          <li>Size Chart</li>
+          <li>Returns & Warranty</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h5 class="footer-section-title">About</h5>
+        <ul>
+          <li>About Us</li>
+          <li>Responsibility</li>
+          <li>Technology & Innovation</li>
+          <li>Explore our stories</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
