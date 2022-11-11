@@ -26,28 +26,40 @@
     <header>
         <nav>
             <ul class="navbar-links">
-                <li class="navbar-item nav-title"><a href="#">Ecommerce</a></li>
-                <li class="navbar-item item"><a href="#">Shop</a></li>
+                <li class="navbar-item nav-title"><a href="index.html">Army Shop</a></li>
+                <li class="navbar-item item"><a href="market.html">Shop</a></li>
                 <li class="navbar-item item"><a href="#">Stories</a></li>
                 <li class="navbar-item item"><a href="#">About</a></li>
                 <li class="navbar-item item"><a href="#"><iconify-icon id="search-icon" inline icon="bi:search"></iconify-icon></a><input type="text" placeholder="Search"></li>
             </ul>
 
             <ul class="navbar-links">
-                <li class="navbar-item"><a href="./cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>3</a></li>
-                <li class="navbar-item"><a href="#">Login</a></li>
+                <li class="navbar-item"><a href="cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2</a></li>
+                <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
             </ul>
         </nav>
-        <div class="responsive-navbar">
-            <a class="nav-icon" href="#">
-                <div class="bar"></div>
-                <div class="space"></div>
-                <div class="bar"></div>
-                <div class="space"></div>
-                <div class="bar"></div>
-                <div class="space"></div>
-                <div class="bar"></div>
-            </a>
+
+        <div class="res-nav-container">
+            <div class="responsive-navbar">
+                <a class="nav-title res-nav-title" href="index.html">Army Shop</a>
+                <div class="nav-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar last-bar"></div>
+                </div>
+            </div>
+            <div class="res-navbar-links-container">
+                <ul class="res-navbar-links ul-left">
+                    <li class="navbar-item item"><a href="market.html">Shop</a></li>
+                    <li class="navbar-item item"><a href="#">Stories</a></li>
+                    <li class="navbar-item item"><a href="#">About</a></li>
+                </ul>
+                <ul class="res-navbar-links ul-right">
+                    <li class="navbar-item"><a href="cart.html"><iconify-icon id="shopping-bag-icon" inline icon="akar-icons:shopping-bag"></iconify-icon>2</a></li>
+                    <li class="navbar-item"><a href="#" onclick="document.getElementById('player').play()">Login</a></li>
+                </ul>
+            </div>
         </div>
     </header>
 
@@ -149,6 +161,7 @@
     </footer>
 
     <!-- JS -->
+    <script src="./src/js/navbar.js"></script>
     <script src="./src/js/slider.js"></script>
     <script src="./src/js/quantity-button.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
