@@ -61,7 +61,7 @@ main > * {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-items: center;
     position: relative;
     bottom: calc(50% + var(--slider-btn-size)/2);
     z-index: 1;
