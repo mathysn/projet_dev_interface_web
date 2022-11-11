@@ -6,10 +6,18 @@
     font-style: normal;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 .contener {
     position: absolute;
     left: 38px;
     right: 38px;
+}
+
+footer {
+    transform: translateX(-38px);
 }
 
 .title {
@@ -33,6 +41,10 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
+}
+
+#subtitle-a {
+    color: #000000;
 }
 
 .item-in {
@@ -75,7 +87,7 @@
 }
 
 .item-remove {
-    color: black;
+    color: #000000;
 }
 
 .divide-bar-grey {
@@ -86,6 +98,14 @@
     margin-bottom: 26px;
 }
 
+.divide-bar-grey-11 {
+    width: 100%;
+    background-color: #909090;
+    height: 1px;
+    margin-top: 11px;
+    margin-bottom: 16px;
+}
+
 .title-order {
     margin-top: 29px;
     font-style: normal;
@@ -94,7 +114,7 @@
     line-height: 30px;
 }
 
-form{
+#form{
     text-align: center;
 }
 
@@ -144,7 +164,7 @@ form{
     color: #0D0D0D;
 }
 
-button {
+#button {
     width: 100%;
     height: 50px;
     margin-top: 10px;
@@ -155,19 +175,23 @@ button {
     text-align: center;
 }
 
-button:hover {
+#button:hover {
     cursor: pointer;
     background-color: rgb(37, 37, 37);
 }
 
 .contener-policy {
+    display: block;
+    height: 22px;
     width: 100%;
     color:#909090;
+    transition: height 0.4s ease-in-out;
+    clip-path: polygon(0% 0%, 100% 0%,
+    100% 100%, 0% 100%)
 }
 
 .contener-policy-title {
     width: 100%;
-    margin-bottom: 11px;
     display: flex;
     justify-content: space-between;
 }
@@ -177,14 +201,27 @@ button:hover {
     line-height: 22px;
 }
 
-i {
+.paragraph {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+#id_plus {
     padding-top: 2px;
+    cursor: pointer;
 }
 
 @media only screen and (min-width: 1300px) {
     .contener {
         left: 141px;
         right: 211px;
+    }
+
+    footer {
+        transform: translateX(-141px);
     }
 }
 
@@ -217,13 +254,12 @@ i {
         margin-top: 27px;
     }
 
-    form {
-        width: 100%;
-        text-align: start;
+    .oder-contener {
+        width: 560px;
     }
 
-    input {
-        width: 100%;
+    .coupon-code {
+        width: 384px;
     }
 }
 
@@ -232,6 +268,9 @@ i {
         width: 302px;
     }
 
+    .coupon-code {
+        width: 284px;
+    }
 
 }
 
@@ -243,6 +282,42 @@ i {
     }
 }
 
-@media only screen and (max-width: 390px) {
+@media only screen and (max-width: 850px) {
+    .contener {
+        top: 64px;
+    }
+}
 
+@media only screen and (max-width: 405px) {
+    
+    .contener {
+        left: 18px;
+        right: 18px;
+    }
+
+    footer {
+        transform: translateX(-18px);
+    }
+
+    .item-title {
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 26px;
+    }
+
+    .item-size {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .item-quantity {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .item-price {
+        padding-top: 2px;
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
